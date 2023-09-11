@@ -1,0 +1,23 @@
+{
+  "name": "m-michalis/advancedproductfilter",
+  "type": "magento-module",
+  "license": "GPL-3.0",
+  "version": "0.1.0",
+  "homepage": "https://github.com/m-michalis/advancedproductfilder",
+  "description":"Adminhtml Advanced Product Filter for OpenMage 20.x & Magento 1.9.x similar to promo rules.",
+  "keywords": [
+    "openmage",
+    "product filter",
+    "magento"
+  ],
+  "require": {
+    "php": "^7.4 || ^8.0",
+    "magento-hackathon/magento-composer-installer": "*"
+  },
+  "authors":[
+    {
+      "name":"Michalis Michalis",
+      "email":"m@internetcode.gr"
+    }
+  ]
+}

@@ -1,0 +1,50 @@
+<script type="text/javascript">
+    var advFilterForm = $('advanced_product_filter_form');
+    var advFilterFormWrapper = advFilterForm.up();
+
+    advFilterFormWrapper.hide();
+    /**
+     * Toggle visibility of advanced filter form
+     */
+    function advancedFilterToggle() {
+
+        if (advFilterFormWrapper.visible()) {
+            advFilterFormWrapper.hide();
+            if ($$('#advanced_filter_button span span span').length > 0) {
+                $$('#advanced_filter_button span span span')[0].innerHTML = 'Show Advanced Filter';
+            } else {
+                $$('#advanced_filter_button span')[0].innerHTML = 'Show Advanced Filter';
+            }
+        } else {
+            advFilterFormWrapper.show();
+            if ($$('#advanced_filter_button span span span').length > 0) {
+                $$('#advanced_filter_button span span span')[0].innerHTML = 'Hide Advanced Filter';
+            } else {
+                $$('#advanced_filter_button span')[0].innerHTML = 'Hide Advanced Filter';
+            }
+        }
+    }
+
+    /**
+     * Override and maintain orig functionality
+     */
+    <?php echo $this->getData('js_object_name') ?>._originalDoFilter = <?php echo $this->getData('js_object_name') ?>.doFilter;
+    <?php echo $this->getData('js_object_name') ?>.doFilter = function () {
+        var ruleParams = advFilterForm.serialize(true);
+
+        var numParams = 0;
+        for (var param in ruleParams) {
+            numParams++;
+        }
+        this.reloadParams = this.reloadParams || {};
+        for (var reloadParam in this.reloadParams) {
+            reloadParam.match('^rule|^hide') && delete this.reloadParams[reloadParam];
+        }
+        if (numParams > 5) {
+            this.reloadParams = Object.extend(this.reloadParams, ruleParams);
+        } else {
+            this.reloadParams.rule = "";
+        }
+        this._originalDoFilter();
+    }
+</script>

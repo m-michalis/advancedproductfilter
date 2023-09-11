@@ -1,0 +1,9 @@
+<?xml version="1.0"?>
+<config>
+    <modules>
+        <InternetCode_AdvancedProductFilter>
+            <active>true</active>
+            <codePool>local</codePool>
+        </InternetCode_AdvancedProductFilter>
+    </modules>
+</config>
