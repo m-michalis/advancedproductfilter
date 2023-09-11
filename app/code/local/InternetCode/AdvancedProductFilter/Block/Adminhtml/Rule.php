@@ -1,4 +1,8 @@
 <?php
+/*
+ * Copyright (c) 2023.
+ * Author: Michalis Michalis
+ */
 
 class InternetCode_AdvancedProductFilter_Block_Adminhtml_Rule
     extends Mage_Adminhtml_Block_Widget_Form

@@ -1,9 +1,8 @@
 <?php
 
 /*
- * @author     M2E Pro Developers Team
- * @copyright  M2E LTD
- * @license    Commercial use is forbidden
+ * Copyright (c) 2023.
+ * Author: Michalis Michalis
  */
 
 abstract class InternetCode_AdvancedProductFilter_Model_Rule_Custom_Abstract

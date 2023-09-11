@@ -1,4 +1,8 @@
 <?php
+/*
+ * Copyright (c) 2023.
+ * Author: Michalis Michalis
+ */
 
 class InternetCode_AdvancedProductFilter_Model_Rule_Custom_Qty
     extends InternetCode_AdvancedProductFilter_Model_Rule_Custom_Abstract

@@ -1,5 +1,8 @@
 <?php
-
+/*
+ * Copyright (c) 2023.
+ * Author: Michalis Michalis
+ */
 
 class InternetCode_AdvancedProductFilter_Block_Adminhtml_Rule_Chooser_Sku
     extends Mage_Adminhtml_Block_Widget_Grid

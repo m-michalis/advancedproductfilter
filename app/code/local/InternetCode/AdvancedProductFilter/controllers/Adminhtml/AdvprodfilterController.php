@@ -1,5 +1,8 @@
 <?php
-
+/*
+ * Copyright (c) 2023.
+ * Author: Michalis Michalis
+ */
 
 class InternetCode_AdvancedProductFilter_Adminhtml_AdvprodfilterController extends Mage_Adminhtml_Controller_Action
 {
