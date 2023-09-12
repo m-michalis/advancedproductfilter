@@ -7,7 +7,7 @@
 <config>
     <modules>
         <InternetCode_AdvancedProductFilter>
-            <version>0.1.0</version>
+            <version>0.1.2</version>
         </InternetCode_AdvancedProductFilter>
     </modules>
     <global>
