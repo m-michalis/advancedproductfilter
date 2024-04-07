@@ -2,7 +2,7 @@
   "name": "m-michalis/advancedproductfilter",
   "type": "magento-module",
   "license": "GPL-3.0",
-  "version": "0.1.3",
+  "version": "0.1.4",
   "homepage": "https://github.com/m-michalis/advancedproductfilder",
   "description":"Adminhtml Advanced Product Filter for OpenMage 20.x & Magento 1.9.x similar to promo rules.",
   "keywords": [

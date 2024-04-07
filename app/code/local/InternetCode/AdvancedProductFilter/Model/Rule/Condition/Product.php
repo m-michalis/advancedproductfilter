@@ -42,6 +42,7 @@ class InternetCode_AdvancedProductFilter_Model_Rule_Condition_Product
         return array(
             'is_in_stock' => 'Stock',
             'qty' => 'Qty',
+            'website' => 'Website',
         );
     }
 
