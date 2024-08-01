@@ -37,17 +37,13 @@ class InternetCode_AdvancedProductFilter_Model_Observer
             }
 
             /**
-             * We are going to detach search_button block and
-             * replace it with a core/text_list in its place (with the same alias).
+             * We are going to replace search_button with a core/text_list in its place.
              * The core/text_list will contain the detached search_button and the new button.
              */
             $searchButton = $gridBlock->getChild('search_button');
 
-            $searchButtonAlias = $searchButton->getBlockAlias();
             $searchButtonAliasNew = $searchButton->getBlockAlias() . '.grouped_item';
             $searchButton->setBlockAlias($searchButtonAliasNew);
-
-            $gridBlock->unsetChild($searchButtonAlias);
 
             /**
              * Append blocks in a certain order (search button should be last)
